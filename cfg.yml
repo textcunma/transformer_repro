@@ -1,0 +1,49 @@
+# 引数を指定
+
+mode: train
+use_visdom: True
+data_limit: 10**4
+data_mode: pretrain
+batch_size: 64
+epochs: 15
+n_layer: 3
+use_pretrain: False
+use_amp: True
+
+
+#mode: test
+#data_limit: 10**4
+#data_mode: pretrain
+#batch_size: 64
+#device: 'cuda'
+#n_layer: 3
+#use_amp: True
+
+
+#mode: predict
+#data_limit: 10**4
+#data_mode: pretrain
+#batch_size: 64
+#predict_input: "This is a pen ."
+#n_layer: 3
+#use_amp: False
+
+
+#mode: onnx
+#data_limit: 10**4
+#data_mode: pretrain
+#batch_size: 64
+#predict_input: "This is a pen ."
+##device: cpu
+#n_layer: 3
+#use_amp: False
+
+
+#mode: optuna
+#use_pretrain: False
+#n_trials: 20
+#batch_size: 64
+#epochs: 5
+#data_limit: 10**4
+#data_mode: pretrain
+#use_amp: True
