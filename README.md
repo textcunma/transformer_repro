@@ -53,14 +53,14 @@ python -m spacy download en_core_web_md
 
 重要な引数一覧
 
-|  引数  |  値  |  説明 |
-| ---- | ---- | ----    |
-|  mode  |  **train** or **test** or **predict**  |　学習 / テスト / 予測 |
-|  data_mode  |  **pretrain** or **sp**  | 事前学習済みモデル / SentencePiece    |
-| visdom   | **True** or **False**   | Visdomを用いて学習状況を可視化するか   |
-| data_limit   |  10**5 など  | データセットの使用データ数, 指定しなければ全データを使用   |
-| batch_size  |   64 など|  バッチ数  |
-| epochs  |   15 など|  エポック数  |
+|  引数  | 値                                                              | 説明                                 |
+| ---- |----------------------------------------------------------------|------------------------------------|
+|  mode  | **train** or **test** or **predict** or **onnx** or **optuna** | 学習 / テスト / 予測 / ONNXによる予測 / ハイパラ調整 |
+|  data_mode  | **pretrain** or **sp**                                         | 事前学習済みモデル / SentencePiece          |
+| visdom   | **True** or **False**                                          | Visdomを用いて学習状況を可視化するか              |
+| data_limit   | 10**5 など                                                       | データセットの使用データ数, 指定しなければ全データを使用      |
+| batch_size  | 64 など                                                          | バッチ数                               |
+| epochs  | 15 など                                                          | エポック数                              |
 
 ## 使用技術 ,ライブラリ
 
